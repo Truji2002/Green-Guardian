@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04a6a01f456dd7b41b2eddfb7f68c670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletColor: {r: 0.8207547, g: 0.16776428, b: 0.16776428, a: 0}
+  bulletColor: {r: 0.3679245, g: 0.18894897, b: 0.02661086, a: 0}
 --- !u!1 &918969259
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,33 +20,22 @@ public class PlaneScript : MonoBehaviour
     }
 
 
-  /* void OnTriggerEnter(Collider other)
-{
-    if (other.tag == "Bullet")
-    {
-        Renderer renderer = other.GetComponent<Renderer>();
-        if (renderer != null)
-        {
-            renderer.material.color = bulletColor;
-        }
-    }
-}*/
 
 
     void OnTriggerEnter(Collider other)
-{
-    if (other.gameObject.tag == "Bullet")
     {
-        Renderer renderer = other.GetComponent<Renderer>();
-        if (renderer != null)
+        if (other.gameObject.tag == "Bullet")
         {
-            // Cambiar el color de la bala
-            renderer.material.color = bulletColor;
-            // Agregar registro para verificar la detección de colisión
-            Debug.Log("Colisión detectada");
+            Renderer renderer = other.GetComponent<Renderer>();
+            if (renderer != null)
+            {
+                // Cambiar el color de la bala
+                renderer.material.color = bulletColor;
+                // Agregar registro para verificar la detección de colisión
+                Debug.Log("Colisión detectada");
+            }
         }
     }
-}
 
 }
 
