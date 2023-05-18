@@ -7,6 +7,7 @@ TagManager:
   - Plane
   - Terrain
   - Bullet
+  - Enemigo
   layers:
   - Default
   - TransparentFX
