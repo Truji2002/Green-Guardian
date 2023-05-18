@@ -8,6 +8,8 @@ TagManager:
   - Terrain
   - Bullet
   - Enemigo
+  - Monster
+  - Basura
   layers:
   - Default
   - TransparentFX

@@ -83,11 +83,14 @@ public class ShootRaycast : MonoBehaviour
 
             lineRenderer.SetPosition(0, shootPosition.position);
             AudioSource.PlayClipAtPoint(sound,transform.position);
-            
+
             if (Physics.Raycast(ray, out hit, laserRange))
             {
                 lineRenderer.SetPosition(1, hit.point);
-                Destroy(hit.transform.gameObject);
+                 if (hit.transform.CompareTag("Enemigo"))
+                {
+                    Destroy(hit.transform.gameObject);
+                }
             }
             else
             {
