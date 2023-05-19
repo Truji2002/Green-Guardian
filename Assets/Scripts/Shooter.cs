@@ -8,7 +8,7 @@ public class Shooter : MonoBehaviour
     public Rigidbody projectile;
     public Transform mySpawn;
     public float fireRate = 0.5f;
-    public float bulletLifetime = 8f;
+    public float bulletLifetime = 0.5f;
     public float maxDistance = 50f;
     public GameObject allowedPlane; // Objeto del plano permitido
     private float timer = 0f;

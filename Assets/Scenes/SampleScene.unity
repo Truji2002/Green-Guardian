@@ -1241,6 +1241,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaPlayer: 100
   vidaVisual: {fileID: 781232242}
+  posicion: {x: 0, y: 0, z: 0}
+  muertes: 0
 --- !u!114 &595487869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1273,6 +1275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 711c48ca54668694a95c53212a85382c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantidadPuntos: 2
+  puntaje: {fileID: 1366251139}
 --- !u!1001 &670229860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2964,8 +2968,9 @@ GameObject:
   - component: {fileID: 1366251136}
   - component: {fileID: 1366251138}
   - component: {fileID: 1366251137}
+  - component: {fileID: 1366251139}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Puntaje
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2988,7 +2993,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 373.3, y: 96}
+  m_AnchoredPosition: {x: 339.3, y: 96}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1366251137
@@ -3011,10 +3016,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3
+  m_text: 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3044,7 +3049,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -3088,6 +3093,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366251135}
   m_CullTransparentMesh: 1
+--- !u!114 &1366251139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366251135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c9d0d1f5b1f63e4bbd88a986cd80892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1388744469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4468,6 +4485,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaPlayer: 100
   vidaVisual: {fileID: 781232242}
+  posicion: {x: 0, y: 0, z: 0}
+  muertes: 0
 --- !u!4 &2001802584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5238820401998598406, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
@@ -4485,6 +4504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 711c48ca54668694a95c53212a85382c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantidadPuntos: 2
+  puntaje: {fileID: 1366251139}
 --- !u!1 &2011735098
 GameObject:
   m_ObjectHideFlags: 0

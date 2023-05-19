@@ -3,8 +3,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.IO;
-//using TMPro;
-
 
 
 public class DatosJugador : MonoBehaviour
@@ -36,6 +34,7 @@ public class DatosJugador : MonoBehaviour
         // Reseteamos la vida y las muertes
         vidaPlayer = 100;
         muertes = 0;
+        
     }
 
     void Update()
@@ -59,11 +58,8 @@ public class DatosJugador : MonoBehaviour
                SceneManager.LoadScene("Game Over");
             }
         }
-        // Obtener el componente TextMeshPro del objeto Canvas
-        //TextMeshProUGUI textoVidas = GetComponentInChildren<TextMeshProUGUI>();
-
-        // Actualizar el texto con el número de vidas restantes
-        //textoVidas.text = "Vidas restantes: " + (2 - muertes).ToString();
+        
     }
+    
        
 }
