@@ -7,6 +7,9 @@ public class PlaneScript : MonoBehaviour
     public Color bulletColor;
     public GameObject treePrefab;
     private bool treePlaced = false;
+     [SerializeField] private float cantidadPuntos;
+
+    [SerializeField] private Puntaje puntaje;
 
 
 
@@ -24,7 +27,9 @@ void OnTriggerEnter(Collider other)
 
             // Llamar al método PlaceTree con la posición de la bala que colisionó con el plano
             PlaceTree(other.transform.position);
+             puntaje.SumarPuntos(cantidadPuntos);
             Destroy(other.gameObject);
+
         }
     }
 }
